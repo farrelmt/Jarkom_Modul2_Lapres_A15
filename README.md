@@ -15,7 +15,21 @@ Muhammad Iqbal Humam     05111840000103
 
     a. Instal Apache di Probolinggo
     
-    b. 
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/8.1.png)
+    
+    b. Instal PHP5
+    
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/8.2.png)
+    
+    c. Ketik nano semerua15.pw di apache2/sites-available dan mengubah sebagai beriikut
+    
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/8.3.png)
+    
+    d. sudah selesai
+    
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/8.4.png)
+    
+    
 9. Awalnya webdapat diakses menggunakan alamat http://semeruyyy.pw/index.php/home. Karena dirasa alamat urlnyakurang bagus, maka (9) diaktifkan mod rewrite agar urlnya menjadi http://semeruyyy.pw/home.
 10. Web http://penanjakan.semeruyyy.pw akan digunakan untuk menyimpan assets file yang memiliki DocumentRoot pada /var/www/penanjakan.semeruyyy.pw dan memiliki struktur
 folder sebagai berikut:

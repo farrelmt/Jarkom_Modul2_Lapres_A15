@@ -21,16 +21,33 @@ Muhammad Iqbal Humam     05111840000103
     
     ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/8.2.png)
     
-    c. Ketik nano semerua15.pw di apache2/sites-available dan mengubah sebagai beriikut
+    c. Ketik nano semerua15.pw di apache2/sites-available dan mengubah dokumen root dan directory sebagai berikut
     
     ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/8.3.png)
     
-    d. sudah selesai
+    d. download file zip yang disediakan di soal, unzip, dan kemudian rename menjadi semerua15
+    
+    e. sudah selesai
     
     ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/8.4.png)
     
     
 9. Awalnya webdapat diakses menggunakan alamat http://semeruyyy.pw/index.php/home. Karena dirasa alamat urlnyakurang bagus, maka (9) diaktifkan mod rewrite agar urlnya menjadi http://semeruyyy.pw/home.
+
+    a. ketikkan a2enmod rewrite untuk mengaktifkan modul rewrite
+    
+    b. buat file .htaccess dan masukkan script berikut
+    
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/9.1.png)
+    
+    c. masuk ke semerua15.pw di apache dan masukkan script berikut
+    
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/9.2.png)
+    
+    d. sudah selesai
+    
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/9.3.png)
+    
 10. Web http://penanjakan.semeruyyy.pw akan digunakan untuk menyimpan assets file yang memiliki DocumentRoot pada /var/www/penanjakan.semeruyyy.pw dan memiliki struktur
 folder sebagai berikut:
 11. Pada folder /public dibolehkan directory listing namun untuk folder yang berada di dalamnya tidak dibolehkan.

@@ -99,7 +99,52 @@ folder sebagai berikut:
 14. Untuk web http://gunung.semeruyyy.pw belum dapat dikonfigurasi pada web server karena menunggu pengerjaan website selesai. (14) sedangkan web http://naik.gunung.semeruyyy.pw
 sudah bisa diakses hanya dengan menggunakan port 8888. DocumentRoot web berada pada /var/www/naik.gunung.semeruyyy.pw.
 
+    a. Membuat file site untuk naik.gunung.semerua15.pw dengan cp dari default atau default-8080 dan diedit sesuai berikut
+    
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/14.1.png)
+    
+    b. download file zip yang ada di soal dengan wget, unzip, dan rename menjadi naik.gunung.semeru15.pw di /var/www
+    
+    c. tambahkan Listen 8888 di ports.conf di apache
+    
+    d. sudah selesai
+    
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/14.2.png)
 
 15. Dikarenakan web http://naik.gunung.semeruyyy.pw bersifat private (15) Bibah meminta kamu membuat web http://naik.gunung.semeruyyy.pw agar diberi autentikasi password dengan username “semeru” dan password “kuynaikgunung” supaya aman dan tidak sembarang orang bisa mengaksesnya.
+    
+    a. jalankan htpasswd -c /etc/apache2/.htpasswd semeru di Probolinggo dan masukkan password yang dikehendaki sesuai soal
+    
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/15.1.png)
+    
+    b. Ubah naik.gunung.semerua15.pw di apache sites-available sesuai dengan script berikut
+    
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/15.2.png)
+    
+    c. Pada bagian bawah file tersebut, tambahkan script sebagai berikut :
+    
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/15.3.png)
+    
+    d. sudah selesai
+    
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/15.4.png)
+
 16. Saat Bibah mengunjungi IP PROBOLINGGO, yang muncul bukan web utama http://semeruyyy.pw melainkan laman default Apache yang bertuliskan “It works!”. (16) Karena dirasa kurang profesional, maka setiap Bibah mengunjungi IP PROBOLINGGO akan dialihkan secara otomatis ke http://semeruyyy.pw.
+
+    a. tambahkan script redirect permanent pada site default di apache sesuai script berikut
+    
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/16.1.png)
+    
+    b. sudah selesai
+    
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/16.2.png)
+
 17. Karena pengunjung pada /var/www/penanjakan.semeruyyy.pw/public/images sangat banyak maka semua request gambar yang memiliki substring “semeru” akan diarahkan menuju semeru.jpg.
+
+    a. buat file .htaccess di probolinggo dan masukkan script sebagai berikut
+    
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/17.1.png)
+    
+    b. sudah selesai
+    
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/17.2.png)

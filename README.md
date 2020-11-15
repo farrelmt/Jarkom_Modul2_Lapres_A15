@@ -12,7 +12,7 @@ Muhammad Iqbal Humam     05111840000103
     
     b. Ubah file named.conf.local seperti dibawah
     
-    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/1.1.png)
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/1.1.PNG)
     
     c. Buat folder jarkom dalam bind (/etc/bind/jarkom)
     
@@ -20,15 +20,15 @@ Muhammad Iqbal Humam     05111840000103
     
     e. Ganti localhost dengan nama domain
     
-    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/1.2.png)
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/1.2.PNG)
     
     f. Buat GRESIK dan SIDOARJO menjadi client dengan mengubah resolv.conf
     
-    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/1.3.png)
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/1.3.PNG)
     
     g. Jika berhasil akan seperti dibawah
     
-    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/1.99.png)
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/1.99.PNG)
     
     
 **Web Server**

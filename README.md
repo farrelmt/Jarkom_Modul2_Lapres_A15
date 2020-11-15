@@ -29,8 +29,122 @@ Muhammad Iqbal Humam     05111840000103
     g. Jika berhasil akan seperti dibawah
     
     ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/1.99.PNG)
+
+2. Agar domain mempunyai alias www.semerua15.pw langkah yang perlu dilakukan adalah
+
+    a. Tambahkan www dan CNAME pada semerua15.pw seperti dibawah
+    
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/2.1.PNG)
+    
+    b. restart bindnya
+    
+    c. Jika berhasil akan seperti dibawah
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/2.99.PNG)
+    
+3. Untuk membuat subdomain penanjakan.semerua15.pw dapat dilakukan
+    
+    a. Tambahkan penanjakan pada file semerua15.pw seperti dibawah
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/3.1.PNG)
+    
+    b. restart bindnya 
+    
+    c. Jika berhasil akan seperti dibawah
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/3.99.PNG)
+
+4. Langkah untuk membuat reverse dns adalah
+
+    a. Ubah file named.conf.local
+    
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/4.1.PNG)
+    
+    b. Salin file db.local ke folder jarkom dengan nama 3 byte pertama IP MALANG yang terbalik
+    
+    c. Tambahkan PTR pada file tersebut
+    
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/4.2.PNG)
+    
+    d. Restart bindnya
+    
+    e. Jika berhasil akan seperti dibawah
+    
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/4.99.PNG)
     
     
+5. Untuk membuat DNS Slave pada Mojokerto maka yang perlu dilakukan adalah
+
+    a. Ubah file named.conf.local pada server MALANG seperti dibawah
+    
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/5.1.PNG)
+
+    b. Restart bindnya
+    
+    c. Update package pada file MOJOKERTO
+    
+    d. install bind pada file MOJOKERTO
+    
+    e. ubah file named.conf.local seperti dibawah
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/5.2.PNG)
+
+    f. Restart bindnya
+    
+    g, Jika berhasil maka walaupun bind pada server MALANG sudah di stop maka tetap dapat melakukan ping
+    
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/5.98.PNG)
+    
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/5.99.PNG)
+
+
+6. Untuk membuat subdomain dengan alamat gunung.semeruyyy.pw yang didelegasikan pada server MOJOKERTO dan mengarah ke IP
+Server PROBOLINGGO dapat dilakukan dengan langkah
+    
+    a. Ubah file semerua15.pw seperti gambar dibawah
+    
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/6.1.PNG)
+    
+    b. Pada file named.conf.options komenkan dnssec dan tambahkan allow query seperti gambar dibawah
+    
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/6.2.PNG)
+
+    c. Ubah file named.conf.local seperti gambar dibawah
+    
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/6.3.PNG)
+    
+    d. Restart bindnya
+    
+    e. Pada server MOJOKERTO ubah file named.conf.options seperti server MALANG
+    
+    f. Ubah file named.conf.local seperti gambar dibawah
+    
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/6.4.PNG)
+
+    g. Buat folder delegasi
+    
+    h. Buat salinan db.local ke dalam folder delegasi dengan nama gunung.semerua15.pw
+    
+    i. Ubah file gunung.semerua15.pw seperti dibawah ini
+    
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/6.5.PNG)
+    
+    j. Restart bindnya
+    
+    k. Jika berhasil maka akan seperti dibawah
+    
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/6.99.PNG)
+    
+7. Untuk membuat subdomain naik.gunung.semerua15.pw yang diarahkan ke ip server PROBOLINGGO dapat dilakukan
+   
+    a. Tambahkan naik pada file gunung.semerua15.pw
+    
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/7.1.PNG)
+    
+    b. Restart bindnya
+    
+    c. Jika berhasil akan seperti gambar dibawah
+    ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/7.99.PNG)
+
+   
+
+
 **Web Server**
 
 8. Setelah selesai membuat keseluruhan domain, kamu diminta untuk segera mengatur web server. (8) Domain http://semeruyyy.pw memiliki DocumentRoot pada /var/www/semeruyyy.pw.

@@ -7,17 +7,29 @@ Muhammad Iqbal Humam     05111840000103
 **DNS**
 
 1. Untuk membuat domain semerua15.pw maka perlu langkah yang perlu dilakukan adalah
+
     a. Install bind9
+    
     b. Ubah file named.conf.local seperti dibawah
+    
     ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/1.1.png)
+    
     c. Buat folder jarkom dalam bind (/etc/bind/jarkom)
+    
     d. Salin file db.local kedalam file jarkom
+    
     e. Ganti localhost dengan nama domain
+    
     ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/1.2.png)
+    
     f. Buat GRESIK dan SIDOARJO menjadi client dengan mengubah resolv.conf
+    
     ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/1.3.png)
+    
     g. Jika berhasil akan seperti dibawah
+    
     ![fotooooo](https://github.com/farrelmt/Jarkom_Modul2_Lapres_A15/blob/main/screenshot/1.99.png)
+    
     
 **Web Server**
 
